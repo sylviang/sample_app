@@ -5,12 +5,17 @@ gem 'rails', '4.0.0'
 
 group :development, :test do
 	gem 'sqlite3'
-	gem 'rspec-rails', '2.13.1'
+	gem 'rspec-rails'
+	gem 'guard-rspec'
+	gem 'spork-rails'
+  gem 'guard-spork'
+  gem 'childprocess'
 end
 
 group :test do
 	gem 'selenium-webdriver', '2.35.1'
 	gem 'capybara', '2.1.0'
+	gem 'growl', '1.0.3'
 end
 
 gem 'sass-rails', '~> 4.0.0'
@@ -21,7 +26,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 group :doc do
-  gem 'sdoc', require: false
+  gem 'sdoc', '0.3.20', require: false
 end
 
 group :production do
